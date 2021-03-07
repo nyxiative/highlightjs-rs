@@ -245,12 +245,212 @@ pub fn case_insensitive(language: &str) -> Option<&'static str> {
 }
 
 pub fn from_id(id: usize) -> Option<&'static str> {
-    for (i, (_, &v)) in HLJS.iter().enumerate() {
-        if i == id {
-            return Some(v);
-        }
+    match id {
+        0 => Some("1c"),
+        1 => Some("4d"),
+        2 => Some("abnf"),
+        3 => Some("accesslog"),
+        4 => Some("ada"),
+        5 => Some("arduino"),
+        6 => Some("armasm"),
+        7 => Some("avrasm"),
+        8 => Some("actionscript"),
+        9 => Some("alan"),
+        10 => Some("ln"),
+        11 => Some("angelscript"),
+        12 => Some("apache"),
+        13 => Some("applescript"),
+        14 => Some("arcade"),
+        15 => Some("asciidoc"),
+        16 => Some("aspectj"),
+        17 => Some("autohotkey"),
+        18 => Some("autoit"),
+        19 => Some("awk"),
+        20 => Some("bash"),
+        21 => Some("basic"),
+        22 => Some("bbcode"),
+        23 => Some("blade"),
+        24 => Some("bnf"),
+        25 => Some("brainfuck"),
+        26 => Some("csharp"),
+        27 => Some("c"),
+        28 => Some("cpp"),
+        29 => Some("cal"),
+        30 => Some("cos"),
+        31 => Some("cmake"),
+        32 => Some("coq"),
+        33 => Some("csp"),
+        34 => Some("css"),
+        35 => Some("capnproto"),
+        36 => Some("chaos"),
+        37 => Some("chapel"),
+        38 => Some("cisco"),
+        39 => Some("clojure"),
+        40 => Some("coffeescript"),
+        41 => Some("cpc"),
+        42 => Some("crmsh"),
+        43 => Some("crystal"),
+        44 => Some("cypher"),
+        45 => Some("d"),
+        46 => Some("dns"),
+        47 => Some("dos"),
+        48 => Some("dart"),
+        49 => Some("delphi"),
+        50 => Some("diff"),
+        51 => Some("django"),
+        52 => Some("dockerfile"),
+        53 => Some("dsconfig"),
+        54 => Some("dts"),
+        55 => Some("dust"),
+        56 => Some("dylan"),
+        57 => Some("ebnf"),
+        58 => Some("elixir"),
+        59 => Some("elm"),
+        60 => Some("erlang"),
+        61 => Some("excel"),
+        62 => Some("extempore"),
+        63 => Some("fsharp"),
+        64 => Some("fix"),
+        65 => Some("fortran"),
+        66 => Some("gcode"),
+        67 => Some("gams"),
+        68 => Some("gauss"),
+        69 => Some("godot"),
+        70 => Some("gherkin"),
+        71 => Some("gn"),
+        72 => Some("go"),
+        73 => Some("gf"),
+        74 => Some("golo"),
+        75 => Some("gradle"),
+        76 => Some("groovy"),
+        77 => Some("xml"),
+        78 => Some("http"),
+        79 => Some("haml"),
+        80 => Some("handlebars"),
+        81 => Some("haskell"),
+        82 => Some("haxe"),
+        83 => Some("hlsl"),
+        84 => Some("hy"),
+        85 => Some("ini"),
+        86 => Some("inform7"),
+        87 => Some("irpf90"),
+        88 => Some("json"),
+        89 => Some("java"),
+        90 => Some("javascript"),
+        91 => Some("jolie"),
+        92 => Some("julia"),
+        93 => Some("kotlin"),
+        94 => Some("tex"),
+        95 => Some("leaf"),
+        96 => Some("lean"),
+        97 => Some("lasso"),
+        98 => Some("less"),
+        99 => Some("ldif"),
+        100 => Some("lisp"),
+        101 => Some("livecodeserver"),
+        102 => Some("livescript"),
+        103 => Some("lua"),
+        104 => Some("makefile"),
+        105 => Some("markdown"),
+        106 => Some("mathematica"),
+        107 => Some("matlab"),
+        108 => Some("maxima"),
+        109 => Some("mel"),
+        110 => Some("mercury"),
+        111 => Some("mirc"),
+        112 => Some("mizar"),
+        113 => Some("mojolicious"),
+        114 => Some("monkey"),
+        115 => Some("moonscript"),
+        116 => Some("n1ql"),
+        117 => Some("nsis"),
+        118 => Some("never"),
+        119 => Some("nginx"),
+        120 => Some("nim"),
+        121 => Some("nix"),
+        122 => Some("ocl"),
+        123 => Some("ocaml"),
+        124 => Some("objectivec"),
+        125 => Some("glsl"),
+        126 => Some("openscad"),
+        127 => Some("ruleslanguage"),
+        128 => Some("oxygene"),
+        129 => Some("pf"),
+        130 => Some("php"),
+        131 => Some("parser3"),
+        132 => Some("perl"),
+        133 => Some("plaintext"),
+        134 => Some("pony"),
+        135 => Some("pgsql"),
+        136 => Some("powershell"),
+        137 => Some("processing"),
+        138 => Some("prolog"),
+        139 => Some("properties"),
+        140 => Some("protobuf"),
+        141 => Some("puppet"),
+        142 => Some("python"),
+        143 => Some("profile"),
+        144 => Some("python-repl"),
+        145 => Some("qsharp"),
+        146 => Some("k"),
+        147 => Some("qml"),
+        148 => Some("r"),
+        149 => Some("cshtml"),
+        150 => Some("reasonml"),
+        151 => Some("redbol"),
+        152 => Some("rib"),
+        153 => Some("rsl"),
+        154 => Some("risc"),
+        155 => Some("graph"),
+        156 => Some("robot"),
+        157 => Some("rpm-specfile"),
+        158 => Some("ruby"),
+        159 => Some("rust"),
+        160 => Some("SAS"),
+        161 => Some("scss"),
+        162 => Some("sql"),
+        163 => Some("p21"),
+        164 => Some("scala"),
+        165 => Some("scheme"),
+        166 => Some("scilab"),
+        167 => Some("shexc"),
+        168 => Some("shell"),
+        169 => Some("smali"),
+        170 => Some("smalltalk"),
+        171 => Some("sml"),
+        172 => Some("solidity"),
+        173 => Some("stan"),
+        174 => Some("stata"),
+        175 => Some("iecst"),
+        176 => Some("stylus"),
+        177 => Some("subunit"),
+        178 => Some("supercollider"),
+        179 => Some("svelte"),
+        180 => Some("swift"),
+        181 => Some("tcl"),
+        182 => Some("terraform"),
+        183 => Some("tap"),
+        184 => Some("thrift"),
+        185 => Some("tp"),
+        186 => Some("tsql"),
+        187 => Some("twig"),
+        188 => Some("typescript"),
+        189 => Some("unicorn-rails-log"),
+        190 => Some("vbnet"),
+        191 => Some("vba"),
+        192 => Some("vbscript"),
+        193 => Some("vhdl"),
+        194 => Some("vala"),
+        195 => Some("verilog"),
+        196 => Some("vim"),
+        197 => Some("axapta"),
+        198 => Some("x86asm"),
+        199 => Some("xl"),
+        200 => Some("xquery"),
+        201 => Some("yml"),
+        202 => Some("zephir"),
+        _ => None
     }
-    None
 }
 
 pub fn to_id(code: &str) -> Option<usize> {
@@ -533,7 +733,824 @@ mod fuzzymatch {
 }
 
 #[cfg(test)]
-mod id_test {
+mod from_id {
+    use super::from_id as id;
+    #[test]
+    fn onec () {
+        assert_eq!(id(0), Some("1c"));
+    }
+    #[test]
+    fn fourd () {
+        assert_eq!(id(1), Some("4d"));
+    }
+    #[test]
+    fn abnf () {
+        assert_eq!(id(2), Some("abnf"));
+    }
+    #[test]
+    fn access_logs () {
+        assert_eq!(id(3), Some("accesslog"));
+    }
+    #[test]
+    fn ada () {
+        assert_eq!(id(4), Some("ada"));
+    }
+    #[test]
+    fn arduino () {
+        assert_eq!(id(5), Some("arduino"));
+    }
+    #[test]
+    fn arm_assembler () {
+        assert_eq!(id(6), Some("armasm"));
+    }
+    #[test]
+    fn avr_assembler () {
+        assert_eq!(id(7), Some("avrasm"));
+    }
+    #[test]
+    fn actionscript () {
+        assert_eq!(id(8), Some("actionscript"));
+    }
+    #[test]
+    fn alan_if () {
+        assert_eq!(id(9), Some("alan"));
+    }
+    #[test]
+    fn alan () {
+        assert_eq!(id(10), Some("ln"));
+    }
+    #[test]
+    fn angelscript () {
+        assert_eq!(id(11), Some("angelscript"));
+    }
+    #[test]
+    fn apache () {
+        assert_eq!(id(12), Some("apache"));
+    }
+    #[test]
+    fn applescript () {
+        assert_eq!(id(13), Some("applescript"));
+    }
+    #[test]
+    fn arcade () {
+        assert_eq!(id(14), Some("arcade"));
+    }
+    #[test]
+    fn asciidoc () {
+        assert_eq!(id(15), Some("asciidoc"));
+    }
+    #[test]
+    fn aspectj () {
+        assert_eq!(id(16), Some("aspectj"));
+    }
+    #[test]
+    fn autohotkey () {
+        assert_eq!(id(17), Some("autohotkey"));
+    }
+    #[test]
+    fn autoit () {
+        assert_eq!(id(18), Some("autoit"));
+    }
+    #[test]
+    fn awk () {
+        assert_eq!(id(19), Some("awk"));
+    }
+    #[test]
+    fn bash () {
+        assert_eq!(id(20), Some("bash"));
+    }
+    #[test]
+    fn basic () {
+        assert_eq!(id(21), Some("basic"));
+    }
+    #[test]
+    fn bbcode () {
+        assert_eq!(id(22), Some("bbcode"));
+    }
+    #[test]
+    fn blade () {
+        assert_eq!(id(23), Some("blade"));
+    }
+    #[test]
+    fn bnf () {
+        assert_eq!(id(24), Some("bnf"));
+    }
+    #[test]
+    fn brainfuck () {
+        assert_eq!(id(25), Some("brainfuck"));
+    }
+    #[test]
+    fn csharp () {
+        assert_eq!(id(26), Some("csharp"));
+    }
+    #[test]
+    fn c () {
+        assert_eq!(id(27), Some("c"));
+    }
+    #[test]
+    fn cpp () {
+        assert_eq!(id(28), Some("cpp"));
+    }
+    #[test]
+    fn cal () {
+        assert_eq!(id(29), Some("cal"));
+    }
+    #[test]
+    fn cache_object_script () {
+        assert_eq!(id(30), Some("cos"));
+    }
+    #[test]
+    fn cmake () {
+        assert_eq!(id(31), Some("cmake"));
+    }
+    #[test]
+    fn coq () {
+        assert_eq!(id(32), Some("coq"));
+    }
+    #[test]
+    fn csp () {
+        assert_eq!(id(33), Some("csp"));
+    }
+    #[test]
+    fn css () {
+        assert_eq!(id(34), Some("css"));
+    }
+    #[test]
+    fn capn_proto () {
+        assert_eq!(id(35), Some("capnproto"));
+    }
+    #[test]
+    fn chaos () {
+        assert_eq!(id(36), Some("chaos"));
+    }
+    #[test]
+    fn chapel () {
+        assert_eq!(id(37), Some("chapel"));
+    }
+    #[test]
+    fn cisco_cli () {
+        assert_eq!(id(38), Some("cisco"));
+    }
+    #[test]
+    fn clojure () {
+        assert_eq!(id(39), Some("clojure"));
+    }
+    #[test]
+    fn coffeescript () {
+        assert_eq!(id(40), Some("coffeescript"));
+    }
+    #[test]
+    fn cpcdoscp () {
+        assert_eq!(id(41), Some("cpc"));
+    }
+    #[test]
+    fn crmsh () {
+        assert_eq!(id(42), Some("crmsh"));
+    }
+    #[test]
+    fn crystal () {
+        assert_eq!(id(43), Some("crystal"));
+    }
+    #[test]
+    fn cypher () {
+        assert_eq!(id(44), Some("cypher"));
+    }
+    #[test]
+    fn d () {
+        assert_eq!(id(45), Some("d"));
+    }
+    #[test]
+    fn dns_zone_file () {
+        assert_eq!(id(46), Some("dns"));
+    }
+    #[test]
+    fn dos () {
+        assert_eq!(id(47), Some("dos"));
+    }
+    #[test]
+    fn dart () {
+        assert_eq!(id(48), Some("dart"));
+    }
+    #[test]
+    fn delphi () {
+        assert_eq!(id(49), Some("delphi"));
+    }
+    #[test]
+    fn diff () {
+        assert_eq!(id(50), Some("diff"));
+    }
+    #[test]
+    fn django () {
+        assert_eq!(id(51), Some("django"));
+    }
+    #[test]
+    fn dockerfile () {
+        assert_eq!(id(52), Some("dockerfile"));
+    }
+    #[test]
+    fn dsconfig () {
+        assert_eq!(id(53), Some("dsconfig"));
+    }
+    #[test]
+    fn dts () {
+        assert_eq!(id(54), Some("dts"));
+    }
+    #[test]
+    fn dust () {
+        assert_eq!(id(55), Some("dust"));
+    }
+    #[test]
+    fn dylan () {
+        assert_eq!(id(56), Some("dylan"));
+    }
+    #[test]
+    fn ebnf () {
+        assert_eq!(id(57), Some("ebnf"));
+    }
+    #[test]
+    fn elixir () {
+        assert_eq!(id(58), Some("elixir"));
+    }
+    #[test]
+    fn elm () {
+        assert_eq!(id(59), Some("elm"));
+    }
+    #[test]
+    fn erlang () {
+        assert_eq!(id(60), Some("erlang"));
+    }
+    #[test]
+    fn excel () {
+        assert_eq!(id(61), Some("excel"));
+    }
+    #[test]
+    fn extempore () {
+        assert_eq!(id(62), Some("extempore"));
+    }
+    #[test]
+    fn fsharp () {
+        assert_eq!(id(63), Some("fsharp"));
+    }
+    #[test]
+    fn fix () {
+        assert_eq!(id(64), Some("fix"));
+    }
+    #[test]
+    fn fortran () {
+        assert_eq!(id(65), Some("fortran"));
+    }
+    #[test]
+    fn gcode () {
+        assert_eq!(id(66), Some("gcode"));
+    }
+    #[test]
+    fn gams () {
+        assert_eq!(id(67), Some("gams"));
+    }
+    #[test]
+    fn gauss () {
+        assert_eq!(id(68), Some("gauss"));
+    }
+    #[test]
+    fn gdscript () {
+        assert_eq!(id(69), Some("godot"));
+    }
+    #[test]
+    fn gherkin () {
+        assert_eq!(id(70), Some("gherkin"));
+    }
+    #[test]
+    fn gn_for_ninja () {
+        assert_eq!(id(71), Some("gn"));
+    }
+    #[test]
+    fn go () {
+        assert_eq!(id(72), Some("go"));
+    }
+    #[test]
+    fn grammatical_framework () {
+        assert_eq!(id(73), Some("gf"));
+    }
+    #[test]
+    fn golo () {
+        assert_eq!(id(74), Some("golo"));
+    }
+    #[test]
+    fn gradle () {
+        assert_eq!(id(75), Some("gradle"));
+    }
+    #[test]
+    fn groovy () {
+        assert_eq!(id(76), Some("groovy"));
+    }
+    #[test]
+    fn html_xml () {
+        assert_eq!(id(77), Some("xml"));
+    }
+    #[test]
+    fn http () {
+        assert_eq!(id(78), Some("http"));
+    }
+    #[test]
+    fn haml () {
+        assert_eq!(id(79), Some("haml"));
+    }
+    #[test]
+    fn handlebars () {
+        assert_eq!(id(80), Some("handlebars"));
+    }
+    #[test]
+    fn haskell () {
+        assert_eq!(id(81), Some("haskell"));
+    }
+    #[test]
+    fn haxe () {
+        assert_eq!(id(82), Some("haxe"));
+    }
+    #[test]
+    fn highlevel_shader_language () {
+        assert_eq!(id(83), Some("hlsl"));
+    }
+    #[test]
+    fn hy () {
+        assert_eq!(id(84), Some("hy"));
+    }
+    #[test]
+    fn ini_toml () {
+        assert_eq!(id(85), Some("ini"));
+    }
+    #[test]
+    fn inform7 () {
+        assert_eq!(id(86), Some("inform7"));
+    }
+    #[test]
+    fn irpf90 () {
+        assert_eq!(id(87), Some("irpf90"));
+    }
+    #[test]
+    fn json () {
+        assert_eq!(id(88), Some("json"));
+    }
+    #[test]
+    fn java () {
+        assert_eq!(id(89), Some("java"));
+    }
+    #[test]
+    fn javascript () {
+        assert_eq!(id(90), Some("javascript"));
+    }
+    #[test]
+    fn jolie () {
+        assert_eq!(id(91), Some("jolie"));
+    }
+    #[test]
+    fn julia () {
+        assert_eq!(id(92), Some("julia"));
+    }
+    #[test]
+    fn kotlin () {
+        assert_eq!(id(93), Some("kotlin"));
+    }
+    #[test]
+    fn latex () {
+        assert_eq!(id(94), Some("tex"));
+    }
+    #[test]
+    fn leaf () {
+        assert_eq!(id(95), Some("leaf"));
+    }
+    #[test]
+    fn lean () {
+        assert_eq!(id(96), Some("lean"));
+    }
+    #[test]
+    fn lasso () {
+        assert_eq!(id(97), Some("lasso"));
+    }
+    #[test]
+    fn less () {
+        assert_eq!(id(98), Some("less"));
+    }
+    #[test]
+    fn ldif () {
+        assert_eq!(id(99), Some("ldif"));
+    }
+    #[test]
+    fn lisp () {
+        assert_eq!(id(100), Some("lisp"));
+    }
+    #[test]
+    fn livecode_server () {
+        assert_eq!(id(101), Some("livecodeserver"));
+    }
+    #[test]
+    fn livescript () {
+        assert_eq!(id(102), Some("livescript"));
+    }
+    #[test]
+    fn lua () {
+        assert_eq!(id(103), Some("lua"));
+    }
+    #[test]
+    fn makefile () {
+        assert_eq!(id(104), Some("makefile"));
+    }
+    #[test]
+    fn markdown () {
+        assert_eq!(id(105), Some("markdown"));
+    }
+    #[test]
+    fn mathematica () {
+        assert_eq!(id(106), Some("mathematica"));
+    }
+    #[test]
+    fn matlab () {
+        assert_eq!(id(107), Some("matlab"));
+    }
+    #[test]
+    fn maxima () {
+        assert_eq!(id(108), Some("maxima"));
+    }
+    #[test]
+    fn maya_embedded_language () {
+        assert_eq!(id(109), Some("mel"));
+    }
+    #[test]
+    fn mercury () {
+        assert_eq!(id(110), Some("mercury"));
+    }
+    #[test]
+    fn mirc_scripting_language () {
+        assert_eq!(id(111), Some("mirc"));
+    }
+    #[test]
+    fn mizar () {
+        assert_eq!(id(112), Some("mizar"));
+    }
+    #[test]
+    fn mojolicious () {
+        assert_eq!(id(113), Some("mojolicious"));
+    }
+    #[test]
+    fn monkey () {
+        assert_eq!(id(114), Some("monkey"));
+    }
+    #[test]
+    fn moonscript () {
+        assert_eq!(id(115), Some("moonscript"));
+    }
+    #[test]
+    fn noneql () {
+        assert_eq!(id(116), Some("n1ql"));
+    }
+    #[test]
+    fn nsis () {
+        assert_eq!(id(117), Some("nsis"));
+    }
+    #[test]
+    fn never () {
+        assert_eq!(id(118), Some("never"));
+    }
+    #[test]
+    fn nginx () {
+        assert_eq!(id(119), Some("nginx"));
+    }
+    #[test]
+    fn nim () {
+        assert_eq!(id(120), Some("nim"));
+    }
+    #[test]
+    fn nix () {
+        assert_eq!(id(121), Some("nix"));
+    }
+    #[test]
+    fn object_constraint_language () {
+        assert_eq!(id(122), Some("ocl"));
+    }
+    #[test]
+    fn ocaml () {
+        assert_eq!(id(123), Some("ocaml"));
+    }
+    #[test]
+    fn objective_c () {
+        assert_eq!(id(124), Some("objectivec"));
+    }
+    #[test]
+    fn opengl_shading_language () {
+        assert_eq!(id(125), Some("glsl"));
+    }
+    #[test]
+    fn openscad () {
+        assert_eq!(id(126), Some("openscad"));
+    }
+    #[test]
+    fn oracle_rules_language () {
+        assert_eq!(id(127), Some("ruleslanguage"));
+    }
+    #[test]
+    fn oxygene () {
+        assert_eq!(id(128), Some("oxygene"));
+    }
+    #[test]
+    fn pf () {
+        assert_eq!(id(129), Some("pf"));
+    }
+    #[test]
+    fn php () {
+        assert_eq!(id(130), Some("php"));
+    }
+    #[test]
+    fn parser3 () {
+        assert_eq!(id(131), Some("parser3"));
+    }
+    #[test]
+    fn perl () {
+        assert_eq!(id(132), Some("perl"));
+    }
+    #[test]
+    fn plaintext () {
+        assert_eq!(id(133), Some("plaintext"));
+    }
+    #[test]
+    fn pony () {
+        assert_eq!(id(134), Some("pony"));
+    }
+    #[test]
+    fn postgresqlplpgsql () {
+        assert_eq!(id(135), Some("pgsql"));
+    }
+    #[test]
+    fn powershell () {
+        assert_eq!(id(136), Some("powershell"));
+    }
+    #[test]
+    fn processing () {
+        assert_eq!(id(137), Some("processing"));
+    }
+    #[test]
+    fn prolog () {
+        assert_eq!(id(138), Some("prolog"));
+    }
+    #[test]
+    fn properties () {
+        assert_eq!(id(139), Some("properties"));
+    }
+    #[test]
+    fn protocol_buffers () {
+        assert_eq!(id(140), Some("protobuf"));
+    }
+    #[test]
+    fn puppet () {
+        assert_eq!(id(141), Some("puppet"));
+    }
+    #[test]
+    fn python () {
+        assert_eq!(id(142), Some("python"));
+    }
+    #[test]
+    fn python_profiler_results () {
+        assert_eq!(id(143), Some("profile"));
+    }
+    #[test]
+    fn python_repl () {
+        assert_eq!(id(144), Some("python-repl"));
+    }
+    #[test]
+    fn qsharp () {
+        assert_eq!(id(145), Some("qsharp"));
+    }
+    #[test]
+    fn q () {
+        assert_eq!(id(146), Some("k"));
+    }
+    #[test]
+    fn qml () {
+        assert_eq!(id(147), Some("qml"));
+    }
+    #[test]
+    fn r () {
+        assert_eq!(id(148), Some("r"));
+    }
+    #[test]
+    fn razor_cshtml () {
+        assert_eq!(id(149), Some("cshtml"));
+    }
+    #[test]
+    fn reasonml () {
+        assert_eq!(id(150), Some("reasonml"));
+    }
+    #[test]
+    fn rebolred () {
+        assert_eq!(id(151), Some("redbol"));
+    }
+    #[test]
+    fn renderman_rib () {
+        assert_eq!(id(152), Some("rib"));
+    }
+    #[test]
+    fn renderman_rsl () {
+        assert_eq!(id(153), Some("rsl"));
+    }
+    #[test]
+    fn riscript () {
+        assert_eq!(id(154), Some("risc"));
+    }
+    #[test]
+    fn roboconf () {
+        assert_eq!(id(155), Some("graph"));
+    }
+    #[test]
+    fn robot_framework () {
+        assert_eq!(id(156), Some("robot"));
+    }
+    #[test]
+    fn rpm_spec_files () {
+        assert_eq!(id(157), Some("rpm-specfile"));
+    }
+    #[test]
+    fn ruby () {
+        assert_eq!(id(158), Some("ruby"));
+    }
+    #[test]
+    fn rust () {
+        assert_eq!(id(159), Some("rust"));
+    }
+    #[test]
+    fn sas () {
+        assert_eq!(id(160), Some("SAS"));
+    }
+    #[test]
+    fn scss () {
+        assert_eq!(id(161), Some("scss"));
+    }
+    #[test]
+    fn sql () {
+        assert_eq!(id(162), Some("sql"));
+    }
+    #[test]
+    fn step_part_2one () {
+        assert_eq!(id(163), Some("p21"));
+    }
+    #[test]
+    fn scala () {
+        assert_eq!(id(164), Some("scala"));
+    }
+    #[test]
+    fn scheme () {
+        assert_eq!(id(165), Some("scheme"));
+    }
+    #[test]
+    fn scilab () {
+        assert_eq!(id(166), Some("scilab"));
+    }
+    #[test]
+    fn shape_expressions () {
+        assert_eq!(id(167), Some("shexc"));
+    }
+    #[test]
+    fn shell () {
+        assert_eq!(id(168), Some("shell"));
+    }
+    #[test]
+    fn smali () {
+        assert_eq!(id(169), Some("smali"));
+    }
+    #[test]
+    fn smalltalk () {
+        assert_eq!(id(170), Some("smalltalk"));
+    }
+    #[test]
+    fn sml () {
+        assert_eq!(id(171), Some("sml"));
+    }
+    #[test]
+    fn solidity () {
+        assert_eq!(id(172), Some("solidity"));
+    }
+    #[test]
+    fn stan () {
+        assert_eq!(id(173), Some("stan"));
+    }
+    #[test]
+    fn stata () {
+        assert_eq!(id(174), Some("stata"));
+    }
+    #[test]
+    fn structured_text () {
+        assert_eq!(id(175), Some("iecst"));
+    }
+    #[test]
+    fn stylus () {
+        assert_eq!(id(176), Some("stylus"));
+    }
+    #[test]
+    fn subunit () {
+        assert_eq!(id(177), Some("subunit"));
+    }
+    #[test]
+    fn supercollider () {
+        assert_eq!(id(178), Some("supercollider"));
+    }
+    #[test]
+    fn svelte () {
+        assert_eq!(id(179), Some("svelte"));
+    }
+    #[test]
+    fn swift () {
+        assert_eq!(id(180), Some("swift"));
+    }
+    #[test]
+    fn tcl () {
+        assert_eq!(id(181), Some("tcl"));
+    }
+    #[test]
+    fn terraform () {
+        assert_eq!(id(182), Some("terraform"));
+    }
+    #[test]
+    fn test_anything_protocol () {
+        assert_eq!(id(183), Some("tap"));
+    }
+    #[test]
+    fn thrift () {
+        assert_eq!(id(184), Some("thrift"));
+    }
+    #[test]
+    fn tp () {
+        assert_eq!(id(185), Some("tp"));
+    }
+    #[test]
+    fn transactsql () {
+        assert_eq!(id(186), Some("tsql"));
+    }
+    #[test]
+    fn twig () {
+        assert_eq!(id(187), Some("twig"));
+    }
+    #[test]
+    fn typescript () {
+        assert_eq!(id(188), Some("typescript"));
+    }
+    #[test]
+    fn unicorn_rails_log () {
+        assert_eq!(id(189), Some("unicorn-rails-log"));
+    }
+    #[test]
+    fn vbnet () {
+        assert_eq!(id(190), Some("vbnet"));
+    }
+    #[test]
+    fn vba () {
+        assert_eq!(id(191), Some("vba"));
+    }
+    #[test]
+    fn vbscript () {
+        assert_eq!(id(192), Some("vbscript"));
+    }
+    #[test]
+    fn vhdl () {
+        assert_eq!(id(193), Some("vhdl"));
+    }
+    #[test]
+    fn vala () {
+        assert_eq!(id(194), Some("vala"));
+    }
+    #[test]
+    fn verilog () {
+        assert_eq!(id(195), Some("verilog"));
+    }
+    #[test]
+    fn vim_script () {
+        assert_eq!(id(196), Some("vim"));
+    }
+    #[test]
+    fn xpp () {
+        assert_eq!(id(197), Some("axapta"));
+    }
+    #[test]
+    fn x86_assembly () {
+        assert_eq!(id(198), Some("x86asm"));
+    }
+    #[test]
+    fn xl () {
+        assert_eq!(id(199), Some("xl"));
+    }
+    #[test]
+    fn xquery () {
+        assert_eq!(id(200), Some("xquery"));
+    }
+    #[test]
+    fn yaml () {
+        assert_eq!(id(201), Some("yml"));
+    }
+    #[test]
+    fn zephir () {
+        assert_eq!(id(202), Some("zephir"));
+    }
+}
+
+#[cfg(test)]
+mod to_id {
     use super::to_id as id;
     #[test]
     fn onec () {
