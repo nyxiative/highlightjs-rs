@@ -4,11 +4,14 @@ BEGIN {
 	FS="\t"
 	print "["
 }
-{
+NR > 2{
 	if ($3 == "") {
-		print "\t" q $2 q ","
+		print "\t" q last q ","
 	}
 }
+{
+	last = $2
+}
 END {
-	print "]"
+	print "\t" q $2 q "\n]"
 }
