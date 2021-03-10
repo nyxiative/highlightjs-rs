@@ -4,7 +4,7 @@ BEGIN {
 	FS="\t"
 	print "["
 }
-NR > 2{
+NR > 1{
 	if ($3 == "") {
 		print "\t" q last q ","
 	}
