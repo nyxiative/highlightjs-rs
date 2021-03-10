@@ -2,7 +2,7 @@
 BEGIN {
 	q="\""
 	FS="\t"
-	print "pub fn to_id(code: usize) -> Option<usize> {\n\tmatch code {"
+	print "pub fn to_id(code: &'static str) -> Option<usize> {\n\tmatch code {"
 }
 {
 	split($2, a, ",");

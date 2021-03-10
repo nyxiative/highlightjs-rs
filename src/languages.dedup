@@ -1,0 +1,203 @@
+1C	1c	
+4D	4d	highlightjs-4d
+ABNF	abnf	
+Access logs	accesslog	
+Ada	ada	
+Arduino	arduino	
+ARM assembler	armasm	
+AVR assembler	avrasm	
+ActionScript	actionscript	
+Alan IF	alan	highlightjs-alan
+Alan	ln	highlightjs-alan
+AngelScript	angelscript	
+Apache	apache	
+AppleScript	applescript	
+Arcade	arcade	
+AsciiDoc	asciidoc	
+AspectJ	aspectj	
+AutoHotkey	autohotkey	
+AutoIt	autoit	
+Awk	awk	
+Bash	bash	
+Basic	basic	
+BBCode	bbcode	highlightjs-bbcode
+Blade	blade	highlightjs-blade
+BNF	bnf	
+Brainfuck	brainfuck	
+C#	csharp	
+C	c	
+C++	cpp	
+C/AL	cal	
+Cache Object Script	cos	
+CMake	cmake	
+Coq	coq	
+CSP	csp	
+CSS	css	
+Cap’n Proto	capnproto	
+Chaos	chaos	highlightjs-chaos
+Chapel	chapel	highlightjs-chapel
+Cisco CLI	cisco	highlightjs-cisco-cli
+Clojure	clojure	
+CoffeeScript	coffeescript	
+CpcdosC+	cpc	highlightjs-cpcdos
+Crmsh	crmsh	
+Crystal	crystal	
+Cypher	cypher	highlightjs-cypher
+D	d	
+DNS Zone file	dns	
+DOS	dos	
+Dart	dart	
+Delphi	delphi	
+Diff	diff	
+Django	django	
+Dockerfile	dockerfile	
+dsconfig	dsconfig	
+DTS	dts	
+Dust	dust	
+Dylan	dylan	highlightjs-dylan
+EBNF	ebnf	
+Elixir	elixir	
+Elm	elm	
+Erlang	erlang	
+Excel	excel	
+Extempore	extempore	highlightjs-xtlang
+F#	fsharp	
+FIX	fix	
+Fortran	fortran	
+G-Code	gcode	
+Gams	gams	
+GAUSS	gauss	
+GDScript	godot	highlightjs-gdscript
+Gherkin	gherkin	
+GN for Ninja	gn	highlightjs-GN
+Go	go	
+Grammatical Framework	gf	highlightjs-gf
+Golo	golo	
+Gradle	gradle	
+Groovy	groovy	
+HTML	xml	
+HTTP	http	
+Haml	haml	
+Handlebars	handlebars	
+Haskell	haskell	
+Haxe	haxe	
+High-level shader language	hlsl	highlightjs-hlsl
+Hy	hy	
+Ini	ini	
+Inform7	inform7	
+IRPF90	irpf90	
+JSON	json	
+Java	java	
+JavaScript	javascript	
+Jolie	jolie	highlightjs-jolie
+Julia	julia	
+Kotlin	kotlin	
+LaTeX	tex	
+Leaf	leaf	
+Lean	lean	highlightjs-lean
+Lasso	lasso	
+Less	less	
+LDIF	ldif	
+Lisp	lisp	
+LiveCode Server	livecodeserver	
+LiveScript	livescript	
+Lua	lua	
+Makefile	makefile	
+Markdown	markdown	
+Mathematica	mathematica	
+Matlab	matlab	
+Maxima	maxima	
+Maya Embedded Language	mel	
+Mercury	mercury	
+mIRC Scripting Language	mirc	highlightjs-mirc
+Mizar	mizar	
+Mojolicious	mojolicious	
+Monkey	monkey	
+Moonscript	moonscript	
+N1QL	n1ql	
+NSIS	nsis	
+Never	never	highlightjs-never
+Nginx	nginx	
+Nim	nim	
+Nix	nix	
+Object Constraint Language	ocl	highlightjs-ocl
+OCaml	ocaml	
+Objective C	objectivec	
+OpenGL Shading Language	glsl	
+OpenSCAD	openscad	
+Oracle Rules Language	ruleslanguage	
+Oxygene	oxygene	
+PF	pf	
+PHP	php	
+Parser3	parser3	
+Perl	perl	
+Plaintext	plaintext	
+Pony	pony	
+PostgreSQL	pgsql	
+PowerShell	powershell	
+Processing	processing	
+Prolog	prolog	
+Properties	properties	
+Protocol Buffers	protobuf	
+Puppet	puppet	
+Python	python	
+Python profiler results	profile	
+Python REPL	python-repl	
+Q#	qsharp	highlightjs-qsharp
+Q	k	
+QML	qml	
+R	r	
+Razor CSHTML	cshtml	highlightjs-cshtml-razor
+ReasonML	reasonml	
+Rebol	redbol	highlightjs-redbol
+RenderMan RIB	rib	
+RenderMan RSL	rsl	
+RiScript	risc	highlightjs-riscript
+Roboconf	graph	
+Robot Framework	robot	highlightjs-robot
+RPM spec files	rpm-specfile	highlightjs-rpm-specfile
+Ruby	ruby	
+Rust	rust	
+SAS	SAS	
+SCSS	scss	
+SQL	sql	
+STEP Part 21	p21	
+Scala	scala	
+Scheme	scheme	
+Scilab	scilab	
+Shape Expressions	shexc	highlightjs-shexc
+Shell	shell	
+Smali	smali	
+Smalltalk	smalltalk	
+SML	sml	
+Solidity	solidity	highlightjs-solidity
+Stan	stan	
+Stata	stata	
+Structured Text	iecst	highlightjs-structured-text
+Stylus	stylus	
+SubUnit	subunit	
+Supercollider	supercollider	highlightjs-supercollider
+Svelte	svelte	highlightjs-svelte
+Swift	swift	
+Tcl	tcl	
+Terraform	terraform	highlightjs-terraform
+Test Anything Protocol	tap	
+Thrift	thrift	
+TP	tp	
+Transact-SQL	tsql	highlightjs-tsql
+Twig	twig	
+TypeScript	typescript	
+Unicorn Rails log	unicorn-rails-log	highlightjs-unicorn-rails-log
+VB.Net	vbnet	
+VBA	vba	highlightjs-vba
+VBScript	vbscript	
+VHDL	vhdl	
+Vala	vala	
+Verilog	verilog	
+Vim Script	vim	
+X++	axapta	
+x86 Assembly	x86asm	
+XL	xl	
+XQuery	xquery	
+YAML	yml	
+Zephir	zephir	

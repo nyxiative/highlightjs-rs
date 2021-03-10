@@ -6,10 +6,13 @@ BEGIN {
 }
 {
 	split($2, a, ",");
-	gsub(/ /, " ", a[1]);
 	gsub(/[ \t]+$/, "", a[1]);
 	gsub(/^[ \t]+/, "", a[1]);
-	print "\t#[test]\n\tfn " a[1] "() {\n\t\tassert_eq!(from_id(" NR-1 "), Some(" q a[1] q"));\n\t}"
+	n=a[1]
+	gsub(/1/, "one", n);
+	gsub(/4/, "four", n);
+	gsub(/-/, "_", n);
+	print "\t#[test]\n\tfn " tolower(n) "() {\n\t\tassert_eq!(from_id(" NR-1 "), Some(" q a[1] q"));\n\t}"
 }
 END {
 	print "}"
