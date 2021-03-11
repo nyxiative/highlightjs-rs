@@ -424,7 +424,7 @@ pub fn from_id(id: usize) -> Option<&'static str> {
 	}
 }
 //dedup.d/11_to_id_conversions.awk
-pub fn to_id(code: &'static str) -> Option<usize> {
+pub fn to_id(code: &str) -> Option<usize> {
 	match code {
 		"1c" => Some(0),
 		"4d" => Some(1),
