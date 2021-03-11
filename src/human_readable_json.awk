@@ -5,14 +5,12 @@ BEGIN {
 	print "["
 }
 
-NR > 1{
-	if ($3 == "") {
-		print "\t" q last q ","
-	}
-}
 {
-	last=$1
+	if ($3 == "") {
+		print "\t" c q $1 q
+	}
+	c=","
 }
 END {
-	print "\t" q $1 q "\n]"
+	print "]"
 }

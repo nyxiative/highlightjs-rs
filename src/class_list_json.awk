@@ -4,14 +4,12 @@ BEGIN {
 	FS="\t"
 	print "["
 }
-NR > 1{
-	if ($3 == "") {
-		print "\t" q last q ","
-	}
-}
 {
-	last = $2
+	if (length($3) == 0) {
+		print "\t"c q $2 q
+	}
+	c=","
 }
 END {
-	print "\t" q $2 q "\n]"
+	print "]"
 }
